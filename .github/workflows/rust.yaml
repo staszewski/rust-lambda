@@ -22,4 +22,12 @@ jobs:
           use-cross: true
           command: build
           args: --release --target=${{ matrix.target }}
+  run_tests:
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run script file
+      run: |
+         chmod +x ../../rust_lambda_helpers.zsh
+         ../../rust_lambda_helpers.zsh
+      shell: bash
 
