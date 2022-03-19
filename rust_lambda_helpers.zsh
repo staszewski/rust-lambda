@@ -3,7 +3,7 @@ RUST_TARGET="aarch64-unknown-linux-gnu" # corresponding with the above, set this
 zipRustLambda() {
   echo "NANA"
   pwd
-  ls ./${RUST_TARGET}/release
+  ls
 	cp ./target/${RUST_TARGET}/release/rust_on_aws ./bootstrap && zip lambda.zip bootstrap && rm bootstrap
 }
 
