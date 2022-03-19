@@ -29,7 +29,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run script file
       run: |
-         chmod +x ../../rust_lambda_helpers.zsh
-         ../../rust_lambda_helpers.zsh
+         chmod +x rust_lambda_helpers.zsh
+         ./rust_lambda_helpers.zsh
       shell: bash
 
